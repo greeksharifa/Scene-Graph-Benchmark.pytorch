@@ -73,6 +73,8 @@ def main():
 
     output_dir = cfg.OUTPUT_DIR
     checkpointer = DetectronCheckpointer(cfg, model, save_dir=output_dir)
+    # print('\n\n\n{} cfg.MODEL.WEIGHT:\n{}'.format('*' * 80, cfg.MODEL.WEIGHT))
+    # print('*' * 80, '\n\n\n')
     _ = checkpointer.load(cfg.MODEL.WEIGHT)
 
     iou_types = ("bbox",)

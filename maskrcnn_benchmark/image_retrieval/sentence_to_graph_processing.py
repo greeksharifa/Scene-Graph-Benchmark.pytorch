@@ -153,7 +153,8 @@ if __name__ == "__main__":
 
     parser.add_argument(
         "--outpath",
-        default="/media/rafi/Samsung_T5/_DATASETS/",
+        # default="/media/rafi/Samsung_T5/_DATASETS/",
+        default="output_dir/",
         metavar="FILE",
         help="path to config file",
         type=str,

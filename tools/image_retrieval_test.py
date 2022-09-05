@@ -27,7 +27,8 @@ except ImportError:
 
 # Do Not set it above 5000, otherwise you will start to run tests on the validation data...
 GALLERY_SIZE = 150
-OUTPUT_DIR = "/media/rafi/Samsung_T5/_DATASETS/vg/new_model/"
+# OUTPUT_DIR = "/media/rafi/Samsung_T5/_DATASETS/vg/new_model/"
+OUTPUT_DIR = "datasets/vg/new_model/"
 
 
 def execute_test(cfg, local_rank, distributed, logger, gallery_size):
